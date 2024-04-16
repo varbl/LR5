@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Form</title>
+</head>
+<body>
+    <h2>Enter Information</h2>
+    <form action="/save-cookie" method="post">
+        <label for="data">Data:</label>
+        <input type="text" id="data" name="data">
+        <br>
+        <label for="expiration">Expiration Date:</label>
+        <input type="datetime-local" id="expiration" name="expiration">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

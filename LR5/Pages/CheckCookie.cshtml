@@ -1,0 +1,22 @@
+﻿@page
+@model CheckCookieModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Cookie</title>
+</head>
+<body>
+    <h2>Check Cookie</h2>
+    @if (!string.IsNullOrEmpty(Model.Data))
+    {
+        <p>Data from cookie: @Model.Data</p>
+    }
+    else
+    {
+        <p>No data found in cookie.</p>
+    }
+</body>
+</html>
